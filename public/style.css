@@ -1,0 +1,106 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: #00000068;
+}
+
+.container {
+  background: #ffffff;
+  width: 250px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 240px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, border-radius 0.5s ease-in-out, margin 0.5s ease-in-out ;
+  
+  
+}
+
+.container:hover {
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  margin: 10px auto 250px;
+}
+
+.labi {
+  background: #000000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, margin 0.5s ease-in-out;
+  margin: 0 auto -135px;
+  border: 2px solid #0000;
+}
+
+.container:hover .labi {
+  width: 200px;
+  height: 200px;
+  margin: -200px auto 0; /* Adjusted margin */
+}
+
+.fb {
+  width: 40px;
+  height: 40px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.container:hover .fb {
+  display: block;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Thunderbolt 76 Regular', sans-serif;
+  margin-top: 20px;
+  visibility: hidden;
+  transition: visibility 0s ease-in-out 0.5s;
+  position: relative;
+}
+
+.container:hover h1 {
+  visibility: visible;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 5px; /* Adjusted margin */
+  visibility: hidden;
+  transition: visibility 0s ease-in-out 0.5s;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container:hover p {
+  visibility: visible;
+}
+
+p::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #eeff00;
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+}
+
+p::after {
+  bottom: -10px; /* Align the line with the bottom of the p element */
+  top: 10px;
+}
+audio{
+  display: none;
+}

@@ -1,0 +1,12 @@
+{
+  "database": {
+    "host": "localhost",
+    "username": "admin",
+    "password": "12345",
+    "database": "my_database"
+  },
+  "apiKeys": {
+    "weather": "your_weather_api_key",
+    "maps": "your_maps_api_key"
+  }
+}
